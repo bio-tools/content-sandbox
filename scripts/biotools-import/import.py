@@ -27,7 +27,7 @@ def retrieve(filters=None):
     while has_next_page:
         parameters = {**filters, **{"page": i}}
         response = requests.get(
-            "https://bio.tools/api/tool/",
+            "https://ecosystem.bio.tools/api/tool/",
             params=parameters,
             headers={"Accept": "application/json"},
         )
@@ -56,7 +56,7 @@ def retrieve(filters=None):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="biotools to bioschemas bot script")
+    parser = argparse.ArgumentParser(description="biotools import")
     parser.add_argument(
         "collection", type=str, default="*", nargs="?", help="collection name filter"
     )
