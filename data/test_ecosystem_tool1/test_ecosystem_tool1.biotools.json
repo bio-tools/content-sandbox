@@ -1,0 +1,16 @@
+{
+    "additionDate": "2022-12-29T14:19:24.550078Z",
+    "biotoolsCURIE": "biotools:test_ecosystem_tool1",
+    "biotoolsID": "test_ecosystem_tool1",
+    "description": "Testing new ecosystem tool",
+    "editPermission": {
+        "type": "private"
+    },
+    "elixir_badge": 0,
+    "homepage": "https://ecosystem.bio.tools",
+    "homepage_status": 0,
+    "lastUpdate": "2022-12-29T14:19:24.553768Z",
+    "name": "Test ecosystem tool1",
+    "owner": "hans",
+    "validated": 0
+}
