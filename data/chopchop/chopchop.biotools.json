@@ -1,44 +1,63 @@
 {
+    "accessibility": "Open access",
     "additionDate": "2016-03-11T10:35:00Z",
     "biotoolsCURIE": "biotools:chopchop",
     "biotoolsID": "chopchop",
+    "cost": "Free of charge",
     "credit": [
         {
             "email": "tessa.montague@gmail.com",
             "name": "Tessa Montague",
+            "orcidid": "https://orcid.org/0000-0002-5918-6327",
             "typeEntity": "Person",
             "typeRole": [
-                "Primary contact"
-            ],
-            "url": "https://chopchop.rc.fas.harvard.edu/contact.php"
-        },
-        {
-            "email": "tessa.montague@gmail.com",
-            "name": "Tessa Montague",
-            "typeRole": [
+                "Primary contact",
                 "Support"
-            ],
-            "url": "https://chopchop.rc.fas.harvard.edu/contact.php"
+            ]
         },
         {
-            "name": "uib.no",
+            "name": "University of Bergen",
+            "rorid": "03zga2b32",
             "typeEntity": "Institute",
             "typeRole": [
                 "Provider"
-            ]
+            ],
+            "url": "https://www.uib.no/en"
         }
     ],
-    "description": "Web tool for selecting the optimum target sites for CRISPR/Cas9- or TALEN-directed mutagenesis.",
+    "description": "CHOPCHOP is a web tool (also available as a command-line script) for selecting target sites for CRISPR/Cas9, CRISPR/Cpf1, CRISPR/Cas13, or NICKASE/TALEN-directed mutagenesis.",
     "documentation": [
         {
+            "note": "FAQ including citation instructions.",
             "type": [
-                "General"
+                "FAQ"
             ],
-            "url": "http://chopchop.cbu.uib.no/instructions.php"
+            "url": "http://chopchop.cbu.uib.no/faq"
+        },
+        {
+            "type": [
+                "Command-line options"
+            ],
+            "url": "https://bitbucket.org/valenlab/chopchop/src/master/README.md"
+        },
+        {
+            "type": [
+                "Quick start guide"
+            ],
+            "url": "http://chopchop.cbu.uib.no/instructions"
+        }
+    ],
+    "download": [
+        {
+            "type": "Downloads page",
+            "url": "https://bitbucket.org/valenlab/chopchop/downloads/"
         }
     ],
     "editPermission": {
-        "type": "private"
+        "authors": [
+            "eca008"
+        ],
+        "type": "group"
     },
     "function": [
         {
@@ -69,20 +88,56 @@
                 {
                     "term": "Prediction and recognition",
                     "uri": "http://edamontology.org/operation_2423"
+                },
+                {
+                    "term": "Primer and probe design",
+                    "uri": "http://edamontology.org/operation_2419"
+                }
+            ],
+            "output": [
+                {
+                    "data": {
+                        "term": "Sequence set (nucleic acid)",
+                        "uri": "http://edamontology.org/data_1234"
+                    }
                 }
             ]
         }
     ],
-    "homepage": "https://chopchop.rc.fas.harvard.edu",
+    "homepage": "http://chopchop.cbu.uib.no/",
     "language": [
-        "R"
+        "Python"
     ],
-    "lastUpdate": "2021-02-19T11:18:47Z",
+    "lastUpdate": "2023-07-18T14:24:36.301272Z",
+    "license": "Apache-2.0",
+    "link": [
+        {
+            "note": "Command-line tool for running CHOPCHOP locally.",
+            "type": [
+                "Repository"
+            ],
+            "url": "https://bitbucket.org/valenlab/chopchop/"
+        },
+        {
+            "type": [
+                "Issue tracker"
+            ],
+            "url": "https://bitbucket.org/valenlab/chopchop/issues?status=new&status=open"
+        }
+    ],
+    "maturity": "Mature",
     "name": "CHOPCHOP",
     "operatingSystem": [
         "Linux",
         "Mac",
         "Windows"
+    ],
+    "otherID": [
+        {
+            "type": "rrid",
+            "value": "RRID:SCR_015723",
+            "version": "3"
+        }
     ],
     "owner": "edv",
     "publication": [
@@ -107,28 +162,141 @@
                         "name": "Valen E."
                     }
                 ],
-                "citationCount": 540,
+                "citationCount": 731,
                 "date": "2014-07-01T00:00:00Z",
                 "journal": "Nucleic Acids Research",
                 "title": "CHOPCHOP: A CRISPR/Cas9 and TALEN web tool for genome editing"
             },
+            "pmcid": "PMC4086086",
+            "pmid": "24861617",
             "type": [
                 "Primary"
-            ]
+            ],
+            "version": "1"
+        },
+        {
+            "doi": "10.1093/nar/gkw398",
+            "metadata": {
+                "abstract": "In just 3 years CRISPR genome editing has transformed biology, and its popularity and potency continue to grow. New CRISPR effectors and rules for locating optimum targets continue to be reported, highlighting the need for computational CRISPR targeting tools to compile these rules and facilitate target selection and design. CHOPCHOP is one of the most widely used web tools for CRISPR- and TALEN-based genome editing. Its overarching principle is to provide an intuitive and powerful tool that can serve both novice and experienced users. In this major update we introduce tools for the next generation of CRISPR advances, including Cpf1 and Cas9 nickases. We support a number of new features that improve the targeting power, usability and efficiency of CHOPCHOP. To increase targeting range and specificity we provide support for custom length sgRNAs, and we evaluate the sequence composition of the whole sgRNA and its surrounding region using models compiled from multiple large-scale studies. These and other new features, coupled with an updated interface for increased usability and support for a continually growing list of organisms, maintain CHOPCHOP as one of the leading tools for CRISPR genome editing. CHOPCHOP v2 can be found at http://chopchop.cbu.uib.no.",
+                "authors": [
+                    {
+                        "name": "Gagnon J.A."
+                    },
+                    {
+                        "name": "Labun K."
+                    },
+                    {
+                        "name": "Montague T.G."
+                    },
+                    {
+                        "name": "Thyme S.B."
+                    },
+                    {
+                        "name": "Valen E."
+                    }
+                ],
+                "citationCount": 549,
+                "date": "2016-07-08T00:00:00Z",
+                "journal": "Nucleic Acids Research",
+                "title": "CHOPCHOP v2: a web tool for the next generation of CRISPR genome engineering"
+            },
+            "pmcid": "PMC4987937",
+            "pmid": "27185894",
+            "type": [
+                "Primary"
+            ],
+            "version": "2"
+        },
+        {
+            "doi": "10.1093/nar/gkz365",
+            "metadata": {
+                "abstract": "The CRISPR-Cas system is a powerful genome editing tool that functions in a diverse array of organisms and cell types. The technology was initially developed to induce targeted mutations in DNA, but CRISPR-Cas has now been adapted to target nucleic acids for a range of purposes. CHOPCHOP is a web tool for identifying CRISPR-Cas single guide RNA (sgRNA) targets. In this major update of CHOPCHOP, we expand our toolbox beyond knockouts. We introduce functionality for targeting RNA with Cas13, which includes support for alternative transcript isoforms and RNA accessibility predictions. We incorporate new DNA targeting modes, including CRISPR activation/repression, targeted enrichment of loci for long-read sequencing, and prediction of Cas9 repair outcomes. Finally, we expand our results page visualization to reveal alternative isoforms and downstream ATG sites, which will aid users in avoiding the expression of truncated proteins. The CHOPCHOP web tool now supports over 200 genomes and we have released a command-line script for running larger jobs and handling unsupported genomes. CHOPCHOP v3 can be found at https://chopchop.cbu.uib.no",
+                "authors": [
+                    {
+                        "name": "Krause M."
+                    },
+                    {
+                        "name": "Labun K."
+                    },
+                    {
+                        "name": "Montague T.G."
+                    },
+                    {
+                        "name": "Tjeldnes H."
+                    },
+                    {
+                        "name": "Torres Cleuren Y.N."
+                    },
+                    {
+                        "name": "Valen E."
+                    }
+                ],
+                "citationCount": 582,
+                "date": "2019-07-01T00:00:00Z",
+                "journal": "Nucleic Acids Research",
+                "title": "CHOPCHOP v3: Expanding the CRISPR web toolbox beyond genome editing"
+            },
+            "pmcid": "PMC6602426",
+            "pmid": "31106371",
+            "type": [
+                "Primary"
+            ],
+            "version": "3"
+        },
+        {
+            "doi": "10.1002/cpz1.46",
+            "metadata": {
+                "abstract": "The design of optimal guide RNA (gRNA) sequences for CRISPR systems is challenged by the need to achieve highly efficient editing at the desired location (on-target editing) with minimal editing at unintended locations (off-target editing). Although laboratory validation should ideally be used to detect off-target activity, computational predictions are almost always preferred in practice due to their speed and low cost. Several studies have therefore explored gRNA-DNA interactions in order to understand how CRISPR complexes select their genomic targets. CHOPCHOP (https://chopchop.cbu.uib.no/) leverages these developments to build a user-friendly web interface that helps users design optimal gRNAs. CHOPCHOP supports a wide range of CRISPR applications, including gene knock-out, sequence knock-in, and RNA knock-down. Furthermore, CHOPCHOP offers visualization that enables an informed choice of gRNAs and supports experimental validation. In these protocols, we describe the best practices for gRNA design using CHOPCHOP. © 2021 The Authors. Current Protocols published by Wiley Periodicals LLC. Basic Protocol 1: Design of gRNAs for gene knock-out. Alternate Protocol 1: Design of gRNAs for dCas9 fusion/effector targeting. Support Protocol: Design of gRNAs for targeting transgenic or plasmid sequences. Basic Protocol 2: Design of gRNAs for RNA targeting. Basic Protocol 3: Design of gRNAs for sequence knock-in. Alternate Protocol 2: Design of gRNAs for knock-in using non-homologous end joining. Basic Protocol 4: Design of gRNAs for knock-in using Cas9 nickases.",
+                "authors": [
+                    {
+                        "name": "Krause M."
+                    },
+                    {
+                        "name": "Labun K."
+                    },
+                    {
+                        "name": "Torres Cleuren Y."
+                    },
+                    {
+                        "name": "Valen E."
+                    }
+                ],
+                "citationCount": 12,
+                "date": "2021-04-01T00:00:00Z",
+                "journal": "Current Protocols",
+                "title": "CRISPR Genome Editing Made Easy Through the CHOPCHOP Website"
+            },
+            "pmid": "33905612",
+            "type": [
+                "Usage"
+            ],
+            "version": "3"
         }
     ],
     "toolType": [
-        "Web application",
-        "Workbench"
+        "Command-line tool",
+        "Web application"
     ],
     "topic": [
         {
-            "term": "Sequence analysis",
-            "uri": "http://edamontology.org/topic_0080"
+            "term": "Experimental design and studies",
+            "uri": "http://edamontology.org/topic_3678"
+        },
+        {
+            "term": "Functional genomics",
+            "uri": "http://edamontology.org/topic_0085"
+        },
+        {
+            "term": "Genetic engineering",
+            "uri": "http://edamontology.org/topic_3912"
+        },
+        {
+            "term": "RNA",
+            "uri": "http://edamontology.org/topic_0099"
         }
     ],
     "validated": 1,
     "version": [
-        "1"
+        "1-3"
     ]
 }
