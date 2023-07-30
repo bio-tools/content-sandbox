@@ -16,6 +16,15 @@
             ]
         },
         {
+            "email": "support@elixir.no",
+            "name": "The Norwegian Bioinformatics Platform (ELIXIR-Norway) Helpdesk",
+            "typeEntity": "Division",
+            "typeRole": [
+                "Support"
+            ],
+            "url": "https://elixir.no/helpdesk"
+        },
+        {
             "name": "University of Bergen",
             "rorid": "03zga2b32",
             "typeEntity": "Institute",
@@ -25,7 +34,7 @@
             "url": "https://www.uib.no/en"
         }
     ],
-    "description": "CHOPCHOP is a web tool (also available as a command-line script) for selecting target sites for CRISPR/Cas9, CRISPR/Cpf1, CRISPR/Cas13, or NICKASE/TALEN-directed mutagenesis.",
+    "description": "CHOPCHOP is a web tool for selecting target sites for CRISPR/Cas9, CRISPR/Cpf1, CRISPR/Cas13, or NICKASE/TALEN-directed mutagenesis. CHOPCHOP is also available as a command-line script.",
     "documentation": [
         {
             "note": "FAQ including citation instructions.",
@@ -108,7 +117,7 @@
     "language": [
         "Python"
     ],
-    "lastUpdate": "2023-07-18T14:24:36.301272Z",
+    "lastUpdate": "2023-07-28T13:32:30.012300Z",
     "license": "Apache-2.0",
     "link": [
         {
@@ -117,6 +126,13 @@
                 "Repository"
             ],
             "url": "https://bitbucket.org/valenlab/chopchop/"
+        },
+        {
+            "note": "Helpdesk for ELIXIR Norway services",
+            "type": [
+                "Helpdesk"
+            ],
+            "url": "https://elixir.no/helpdesk"
         },
         {
             "type": [
@@ -162,7 +178,7 @@
                         "name": "Valen E."
                     }
                 ],
-                "citationCount": 731,
+                "citationCount": 736,
                 "date": "2014-07-01T00:00:00Z",
                 "journal": "Nucleic Acids Research",
                 "title": "CHOPCHOP: A CRISPR/Cas9 and TALEN web tool for genome editing"
@@ -195,7 +211,7 @@
                         "name": "Valen E."
                     }
                 ],
-                "citationCount": 549,
+                "citationCount": 552,
                 "date": "2016-07-08T00:00:00Z",
                 "journal": "Nucleic Acids Research",
                 "title": "CHOPCHOP v2: a web tool for the next generation of CRISPR genome engineering"
@@ -231,7 +247,7 @@
                         "name": "Valen E."
                     }
                 ],
-                "citationCount": 582,
+                "citationCount": 596,
                 "date": "2019-07-01T00:00:00Z",
                 "journal": "Nucleic Acids Research",
                 "title": "CHOPCHOP v3: Expanding the CRISPR web toolbox beyond genome editing"
@@ -245,32 +261,29 @@
         },
         {
             "doi": "10.1002/cpz1.46",
-            "metadata": {
-                "abstract": "The design of optimal guide RNA (gRNA) sequences for CRISPR systems is challenged by the need to achieve highly efficient editing at the desired location (on-target editing) with minimal editing at unintended locations (off-target editing). Although laboratory validation should ideally be used to detect off-target activity, computational predictions are almost always preferred in practice due to their speed and low cost. Several studies have therefore explored gRNA-DNA interactions in order to understand how CRISPR complexes select their genomic targets. CHOPCHOP (https://chopchop.cbu.uib.no/) leverages these developments to build a user-friendly web interface that helps users design optimal gRNAs. CHOPCHOP supports a wide range of CRISPR applications, including gene knock-out, sequence knock-in, and RNA knock-down. Furthermore, CHOPCHOP offers visualization that enables an informed choice of gRNAs and supports experimental validation. In these protocols, we describe the best practices for gRNA design using CHOPCHOP. © 2021 The Authors. Current Protocols published by Wiley Periodicals LLC. Basic Protocol 1: Design of gRNAs for gene knock-out. Alternate Protocol 1: Design of gRNAs for dCas9 fusion/effector targeting. Support Protocol: Design of gRNAs for targeting transgenic or plasmid sequences. Basic Protocol 2: Design of gRNAs for RNA targeting. Basic Protocol 3: Design of gRNAs for sequence knock-in. Alternate Protocol 2: Design of gRNAs for knock-in using non-homologous end joining. Basic Protocol 4: Design of gRNAs for knock-in using Cas9 nickases.",
-                "authors": [
-                    {
-                        "name": "Krause M."
-                    },
-                    {
-                        "name": "Labun K."
-                    },
-                    {
-                        "name": "Torres Cleuren Y."
-                    },
-                    {
-                        "name": "Valen E."
-                    }
-                ],
-                "citationCount": 12,
-                "date": "2021-04-01T00:00:00Z",
-                "journal": "Current Protocols",
-                "title": "CRISPR Genome Editing Made Easy Through the CHOPCHOP Website"
-            },
             "pmid": "33905612",
             "type": [
                 "Usage"
             ],
             "version": "3"
+        }
+    ],
+    "relation": [
+        {
+            "biotoolsID": "blat",
+            "type": "uses"
+        },
+        {
+            "biotoolsID": "bowtie",
+            "type": "includes"
+        },
+        {
+            "biotoolsID": "primer3",
+            "type": "includes"
+        },
+        {
+            "biotoolsID": "vienna_rna_package",
+            "type": "uses"
         }
     ],
     "toolType": [
