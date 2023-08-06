@@ -7,14 +7,75 @@
     "credit": [
         {
             "email": "admin@licebase.org",
+            "name": "Inge Jonassen",
+            "orcidid": "https://orcid.org/0000-0003-4110-0748",
             "typeEntity": "Person",
             "typeRole": [
                 "Primary contact"
             ]
+        },
+        {
+            "email": "admin@licebase.org",
+            "name": "Michael Dondrup",
+            "orcidid": "https://orcid.org/0000-0002-2371-5928",
+            "typeEntity": "Person",
+            "typeRole": [
+                "Developer",
+                "Maintainer",
+                "Primary contact"
+            ]
+        },
+        {
+            "email": "support@elixir.no",
+            "name": "The Norwegian Bioinformatics Platform (ELIXIR-Norway) Helpdesk",
+            "typeEntity": "Division",
+            "typeRole": [
+                "Support"
+            ],
+            "url": "https://elixir.no/helpdesk"
+        },
+        {
+            "fundrefid": "10.13039/501100005036",
+            "gridid": "grid.7914.b",
+            "name": "University of Bergen",
+            "rorid": "03zga2b32",
+            "typeEntity": "Institute",
+            "typeRole": [
+                "Contributor"
+            ],
+            "url": "http://www.uib.no/"
+        },
+        {
+            "name": "Wei Zhang",
+            "typeEntity": "Person",
+            "typeRole": [
+                "Developer"
+            ]
+        },
+        {
+            "name": "Sea Lice Research Centre (SLRC)",
+            "typeEntity": "Consortium",
+            "typeRole": [
+                "Contributor",
+                "Provider"
+            ],
+            "url": "https://slrc.w.uib.no/"
         }
     ],
-    "description": "Database for Sea lice (Lepeophtheirus salmonis and Caligus spp.), which are the major pathogens affecting the global salmon farming industry and have a significant impact in many areas",
+    "description": "LiceBase is a genomics database for sea lice (Lepeophtheirus salmonis and Caligus spp.), which are major pathogens affecting the global salmon farming industry. The database contains the genome annotation of the Atlantic salmon louse (L. salmonis) and is designed to help researchers, industry professionals, and other interested parties access and share information about these parasites, with the goal of developing new treatment methods and tools to ensure a sustainable salmon farming industry. LiceBase provides annotated genome reports, genome browsing, RNA interference (RNAi) experiment browsing for several additional species, BLAST search, and in-situ images. The database homepage posts news updates and recent publications related to sea lice and salmonid species.",
     "documentation": [
+        {
+            "type": [
+                "Code of conduct"
+            ],
+            "url": "https://licebase.org/privacy_policy"
+        },
+        {
+            "type": [
+                "FAQ"
+            ],
+            "url": "https://licebase.org/?q=node/760957"
+        },
         {
             "type": [
                 "General"
@@ -23,13 +84,23 @@
         },
         {
             "type": [
-                "General"
+                "Terms of use"
             ],
-            "url": "https://licebase.org/documentation"
+            "url": "https://licebase.org/terms_of_use"
+        }
+    ],
+    "download": [
+        {
+            "note": "Annotation files",
+            "type": "Downloads page",
+            "url": "https://licebase.org/?q=organism/Lepeophtheirus/salmonis"
         }
     ],
     "editPermission": {
-        "type": "private"
+        "authors": [
+            "eca008"
+        ],
+        "type": "group"
     },
     "elixirNode": [
         "Norway"
@@ -37,9 +108,105 @@
     "elixirPlatform": [
         "Data"
     ],
+    "function": [
+        {
+            "input": [
+                {
+                    "data": {
+                        "term": "Keyword",
+                        "uri": "http://edamontology.org/data_0968"
+                    },
+                    "format": [
+                        {
+                            "term": "plain text format (unformatted)",
+                            "uri": "http://edamontology.org/format_1964"
+                        }
+                    ]
+                },
+                {
+                    "data": {
+                        "term": "Sequence",
+                        "uri": "http://edamontology.org/data_2044"
+                    },
+                    "format": [
+                        {
+                            "term": "FASTA",
+                            "uri": "http://edamontology.org/format_1929"
+                        },
+                        {
+                            "term": "GCG",
+                            "uri": "http://edamontology.org/format_1935"
+                        },
+                        {
+                            "term": "Textual format",
+                            "uri": "http://edamontology.org/format_2330"
+                        },
+                        {
+                            "term": "raw",
+                            "uri": "http://edamontology.org/format_1957"
+                        }
+                    ]
+                }
+            ],
+            "operation": [
+                {
+                    "term": "Genome annotation",
+                    "uri": "http://edamontology.org/operation_0362"
+                },
+                {
+                    "term": "Genome visualisation",
+                    "uri": "http://edamontology.org/operation_3208"
+                },
+                {
+                    "term": "Sequence similarity search",
+                    "uri": "http://edamontology.org/operation_0346"
+                }
+            ],
+            "output": [
+                {
+                    "data": {
+                        "term": "Sequence report",
+                        "uri": "http://edamontology.org/data_2955"
+                    },
+                    "format": [
+                        {
+                            "term": "BLAST results",
+                            "uri": "http://edamontology.org/format_1333"
+                        },
+                        {
+                            "term": "HTML",
+                            "uri": "http://edamontology.org/format_2331"
+                        },
+                        {
+                            "term": "Image format",
+                            "uri": "http://edamontology.org/format_3547"
+                        },
+                        {
+                            "term": "Textual format",
+                            "uri": "http://edamontology.org/format_2330"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
     "homepage": "https://licebase.org/",
-    "lastUpdate": "2020-06-16T10:55:24Z",
-    "license": "Other",
+    "language": [
+        "JavaScript",
+        "PHP",
+        "Perl",
+        "SQL"
+    ],
+    "lastUpdate": "2023-08-04T12:15:50.974249Z",
+    "license": "CC-BY-SA-4.0",
+    "link": [
+        {
+            "type": [
+                "Helpdesk"
+            ],
+            "url": "https://elixir.no/helpdesk"
+        }
+    ],
     "maturity": "Mature",
     "name": "LiceBase",
     "operatingSystem": [
@@ -54,8 +221,24 @@
     ],
     "topic": [
         {
-            "term": "Freshwater biology",
-            "uri": "http://edamontology.org/topic_3573"
+            "term": "Agricultural science",
+            "uri": "http://edamontology.org/topic_3810"
+        },
+        {
+            "term": "Bioinformatics",
+            "uri": "http://edamontology.org/topic_0091"
+        },
+        {
+            "term": "Genomics",
+            "uri": "http://edamontology.org/topic_0622"
+        },
+        {
+            "term": "Marine biology",
+            "uri": "http://edamontology.org/topic_3387"
+        },
+        {
+            "term": "Parasitology",
+            "uri": "http://edamontology.org/topic_3302"
         }
     ],
     "validated": 1
