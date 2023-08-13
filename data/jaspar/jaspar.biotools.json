@@ -430,7 +430,7 @@
     "language": [
         "Python"
     ],
-    "lastUpdate": "2023-08-04T10:13:20.554936Z",
+    "lastUpdate": "2023-08-10T10:55:43.068621Z",
     "license": "CC-BY-4.0",
     "link": [
         {
@@ -573,7 +573,7 @@
                         "name": "Wasserman W.W."
                     }
                 ],
-                "citationCount": 354,
+                "citationCount": 356,
                 "date": "2022-01-07T00:00:00Z",
                 "journal": "Nucleic Acids Research",
                 "title": "JASPAR 2022: The 9th release of the open-access database of transcription factor binding profiles"
@@ -723,7 +723,7 @@
                         "name": "Zhang X."
                     }
                 ],
-                "citationCount": 988,
+                "citationCount": 996,
                 "date": "2020-01-01T00:00:00Z",
                 "journal": "Nucleic Acids Research",
                 "title": "JASPAR 2020: Update of the open-Access database of transcription factor binding profiles"
@@ -917,6 +917,68 @@
             "version": "5.0_ALPHA"
         },
         {
+            "doi": "10.1093/nar/gkv1176",
+            "metadata": {
+                "abstract": "JASPAR (http://jaspar.genereg.net) is an open-access database storing curated, non-redundant transcription factor (TF) binding profiles representing transcription factor binding preferences as position frequency matrices for multiple species in six taxonomic groups. For this 2016 release, we expanded the JASPAR CORE collection with 494 new TF binding profiles (315 in vertebrates, 11 in nematodes, 3 in insects, 1 in fungi and 164 in plants) and updated 59 profiles (58 in vertebrates and 1 in fungi). The introduced profiles represent an 83% expansion and 10% update when compared to the previous release. We updated the structural annotation of the TF DNA binding domains (DBDs) following a published hierarchical structural classification. In addition, we introduced 130 transcription factor flexible models trained on ChIP-seq data for vertebrates, which capture dinucleotide dependencies within TF binding sites. This new JASPAR release is accompanied by a new web tool to infer JASPAR TF binding profiles recognized by a given TF protein sequence. Moreover, we provide the users with a Ruby module complementing the JASPAR API to ease programmatic access and use of the JASPAR collection of profiles. Finally, we provide the JASPAR2016 R/Bioconductor data package with the data of this release.",
+                "authors": [
+                    {
+                        "name": "Arenillas D.J."
+                    },
+                    {
+                        "name": "Chen C.-Y."
+                    },
+                    {
+                        "name": "Denay G."
+                    },
+                    {
+                        "name": "Fornes O."
+                    },
+                    {
+                        "name": "Lee J."
+                    },
+                    {
+                        "name": "Lenhard B."
+                    },
+                    {
+                        "name": "Mathelier A."
+                    },
+                    {
+                        "name": "Parcy F."
+                    },
+                    {
+                        "name": "Sandelin A."
+                    },
+                    {
+                        "name": "Shi W."
+                    },
+                    {
+                        "name": "Shyr C."
+                    },
+                    {
+                        "name": "Tan G."
+                    },
+                    {
+                        "name": "Wasserman W.W."
+                    },
+                    {
+                        "name": "Worsley-Hunt R."
+                    },
+                    {
+                        "name": "Zhang A.W."
+                    }
+                ],
+                "citationCount": 717,
+                "date": "2016-01-01T00:00:00Z",
+                "journal": "Nucleic Acids Research",
+                "title": "JASPAR 2016: A major expansion and update of the open-access database of transcription factor binding profiles"
+            },
+            "pmid": "26531826",
+            "type": [
+                "Primary"
+            ],
+            "version": "2016"
+        },
+        {
             "doi": "10.1093/nar/gkh012",
             "pmid": "14681366",
             "type": [
@@ -931,14 +993,6 @@
                 "Primary"
             ],
             "version": "2"
-        },
-        {
-            "doi": "10.1093/nar/gkv1176",
-            "pmid": "26531826",
-            "type": [
-                "Primary"
-            ],
-            "version": "2016"
         }
     ],
     "relation": [
@@ -977,10 +1031,13 @@
     ],
     "toolType": [
         "Database portal",
-        "Web API",
         "Web application"
     ],
     "topic": [
+        {
+            "term": "Biological databases",
+            "uri": "http://edamontology.org/topic_3071"
+        },
         {
             "term": "Gene regulation",
             "uri": "http://edamontology.org/topic_0204"
