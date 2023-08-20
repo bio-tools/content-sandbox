@@ -144,7 +144,7 @@
             "url": "https://elixir.no"
         }
     ],
-    "description": "Omnipy, a Python library for type-driven data wrangling and scalable data flow orchestration across domains, simplifies creation and deployment of (meta)data transformation and emphasizes FAIRification, executable metadata crosswalks and data brokering. It aids generic data tasks like extraction from multiple sources, manipulation and (meta)data mapping with systematic data model transformation across fields. Embracing a \"parse, don't validate\" approach, omnipy uses Python type hints and pydantic for data consistency and adherence to specific models. Highly modular, it integrates (meta)data transformation steps dependent on software like pandas and R. The architecture supports pluggable execution engines like Prefect, an interoperable industry-developed Open Source data flow orchestration engine. Envisioned as a community effort, omnipy aims to offer various import formats and data models with hierarchical and tabular representations, ontology mapping and semiautomatic data cleaning.",
+    "description": "Omnipy is a Python library for type-driven data wrangling and scalable data flow orchestration. It simplifies creation and deployment of (meta)data transformation processes, emphasizing FAIRification, executable metadata crosswalks and data brokering. Omnipy aids generic data tasks like extraction from multiple sources, (meta)data mapping and systematic data model transformations. Embracing a \"parse, don't validate\" approach, omnipy uses Python type hints and pydantic for data consistency and adherence to specific models. Highly modular, it allows integration of (meta)data transformation steps dependent on software like pandas and R. The architecture supports pluggable execution engines like Prefect, a highly interoperable industry-developed Open Source data flow orchestration engine. Envisioned as a community effort, omnipy aims to offer various import formats and data models (both hierarchical and tabular representations), as well as ontology mapping and semiautomatic data cleaning.",
     "documentation": [
         {
             "type": [
@@ -426,7 +426,7 @@
     "language": [
         "Python"
     ],
-    "lastUpdate": "2023-08-11T13:21:12.955115Z",
+    "lastUpdate": "2023-08-15T07:24:18.092241Z",
     "license": "Apache-2.0",
     "link": [
         {
@@ -437,11 +437,25 @@
             "url": "https://github.com/fairtracks/omnipy_examples"
         },
         {
+            "note": "Omnipy was developed as part of the FAIRtracks project",
+            "type": [
+                "Service"
+            ],
+            "url": "https://fairtracks.net/"
+        },
+        {
             "note": "PyPI page for omnipy",
             "type": [
                 "Repository"
             ],
             "url": "https://pypi.org/project/omnipy/"
+        },
+        {
+            "note": "The Prefect workflow orchestration platform",
+            "type": [
+                "Other"
+            ],
+            "url": "https://www.prefect.io/"
         },
         {
             "type": [

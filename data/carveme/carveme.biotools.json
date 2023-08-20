@@ -336,7 +336,7 @@
     "language": [
         "Python"
     ],
-    "lastUpdate": "2023-08-03T12:33:15.481157Z",
+    "lastUpdate": "2023-08-15T10:51:32.592010Z",
     "license": "Apache-2.0",
     "link": [
         {
@@ -381,7 +381,7 @@
                         "name": "Tramontano M."
                     }
                 ],
-                "citationCount": 233,
+                "citationCount": 239,
                 "date": "2018-09-06T00:00:00Z",
                 "journal": "Nucleic Acids Research",
                 "title": "Fast automated reconstruction of genome-scale metabolic models for microbial species and communities"
@@ -446,7 +446,6 @@
         }
     ],
     "version": [
-        "0.1.4",
         "1.0.0",
         "1.1.0",
         "1.2.0",
