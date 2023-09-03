@@ -1,8 +1,8 @@
 {
     "accessibility": "Open access",
-    "additionDate": "2021-11-30T11:39:19.844213Z",
-    "biotoolsCURIE": "biotools:bioexcel_building_blocks_tutorials_protein_md_setup_amber_version",
-    "biotoolsID": "bioexcel_building_blocks_tutorials_protein_md_setup_amber_version",
+    "additionDate": "2023-08-29T13:59:17.320256Z",
+    "biotoolsCURIE": "biotools:bioexcel_building_blocks_tutorials_molecular_interaction_potentials",
+    "biotoolsID": "bioexcel_building_blocks_tutorials_molecular_interaction_potentials",
     "collectionID": [
         "BioExcel"
     ],
@@ -27,47 +27,49 @@
             "orcidid": "https://orcid.org/0000-0003-0513-0288",
             "typeEntity": "Person",
             "typeRole": [
+                "Contributor",
                 "Developer",
-                "Documentor",
                 "Maintainer"
             ],
-            "url": "https://www.irbbarcelona.org/en/research/genis-bayarri"
+            "url": "https://www.irbbarcelona.org/es/research/genis-bayarri"
         },
         {
-            "name": "BioExcel Center of Excellence for Computational Biomolecular Research",
+            "name": "BioExcel CoE",
             "typeEntity": "Consortium",
             "typeRole": [
                 "Provider"
             ],
-            "url": "https://www.bioexcel.eu"
+            "url": "https://bioexcel.eu/"
         }
     ],
-    "description": "This tutorial aims to illustrate the process of setting up a simulation system containing a protein, step by step, using the BioExcel Building Blocks library (biobb) wrapping the AmberTools utility from the AMBER package. The particular example used is the Lysozyme protein (PDB code 1AKI).",
+    "description": "This tutorial aims to illustrate the process of computing classical molecular interaction potentials from protein structures step by step, using the BioExcel Building Blocks library (biobb)",
     "documentation": [
         {
-            "note": "Read the Docs Workflow Documentation",
+            "note": "Read the Docs workflow documentation",
             "type": [
                 "Other"
             ],
-            "url": "https://biobb-wf-amber-md-setup.readthedocs.io/en/latest/mdsetup_tutorial.html"
+            "url": "https://biobb-wf-cmip.readthedocs.io/en/latest/index.html"
         }
     ],
     "download": [
         {
             "note": "BioExcel Binder",
             "type": "VM image",
-            "url": "https://bioexcel-binder.tsi.ebi.ac.uk/v2/gh/bioexcel/biobb_wf_amber_md_setup/master?filepath=%2Fbiobb_wf_amber_md_setup%2Fnotebooks%2Fmdsetup%2Fbiobb_amber_setup_notebook.ipynb"
+            "url": "https://bioexcel-binder.tsi.ebi.ac.uk/v2/gh/bioexcel/biobb_wf_cmip/main?filepath=biobb_wf_cmip%2Fnotebooks%2Fbiobb_wf_cmip.ipynb"
         },
         {
             "type": "Source code",
-            "url": "https://github.com/bioexcel/biobb_wf_amber_md_setup"
+            "url": "https://github.com/bioexcel/biobb_wf_cmip",
+            "version": "1.0"
         }
     ],
     "editPermission": {
         "type": "private"
     },
     "elixirNode": [
-        "Spain"
+        "Spain",
+        "UK"
     ],
     "elixirPlatform": [
         "Interoperability",
@@ -87,42 +89,6 @@
                             "uri": "http://edamontology.org/format_1476"
                         }
                     ]
-                }
-            ],
-            "operation": [
-                {
-                    "term": "Molecular dynamics",
-                    "uri": "http://edamontology.org/operation_2476"
-                },
-                {
-                    "term": "Protein modelling",
-                    "uri": "http://edamontology.org/operation_0477"
-                },
-                {
-                    "term": "Protein structure analysis",
-                    "uri": "http://edamontology.org/operation_2406"
-                },
-                {
-                    "term": "Structure visualisation",
-                    "uri": "http://edamontology.org/operation_0570"
-                },
-                {
-                    "term": "Trajectory visualization",
-                    "uri": "http://edamontology.org/operation_3890"
-                }
-            ],
-            "output": [
-                {
-                    "data": {
-                        "term": "Topology data",
-                        "uri": "http://edamontology.org/data_3872"
-                    },
-                    "format": [
-                        {
-                            "term": "AMBER top",
-                            "uri": "http://edamontology.org/format_3881"
-                        }
-                    ]
                 },
                 {
                     "data": {
@@ -131,23 +97,79 @@
                     },
                     "format": [
                         {
-                            "term": "mdcrd",
-                            "uri": "http://edamontology.org/format_3878"
-                        },
+                            "term": "PDB",
+                            "uri": "http://edamontology.org/format_1476"
+                        }
+                    ]
+                }
+            ],
+            "operation": [
+                {
+                    "term": "Protein-protein interaction analysis",
+                    "uri": "http://edamontology.org/operation_2949"
+                },
+                {
+                    "term": "Residue contact prediction",
+                    "uri": "http://edamontology.org/operation_0272"
+                },
+                {
+                    "term": "Residue interaction calculation",
+                    "uri": "http://edamontology.org/operation_0248"
+                },
+                {
+                    "term": "Structure analysis",
+                    "uri": "http://edamontology.org/operation_2480"
+                },
+                {
+                    "term": "Structure visualisation",
+                    "uri": "http://edamontology.org/operation_0570"
+                }
+            ],
+            "output": [
+                {
+                    "data": {
+                        "term": "Protein features",
+                        "uri": "http://edamontology.org/data_1277"
+                    },
+                    "format": [
                         {
-                            "term": "netCDF",
-                            "uri": "http://edamontology.org/format_3650"
+                            "term": "Textual format",
+                            "uri": "http://edamontology.org/format_2330"
+                        }
+                    ]
+                },
+                {
+                    "data": {
+                        "term": "Protein interaction data",
+                        "uri": "http://edamontology.org/data_0906"
+                    },
+                    "format": [
+                        {
+                            "term": "Textual format",
+                            "uri": "http://edamontology.org/format_2330"
+                        }
+                    ]
+                },
+                {
+                    "data": {
+                        "term": "Protein structure",
+                        "uri": "http://edamontology.org/data_1460"
+                    },
+                    "format": [
+                        {
+                            "term": "PDB",
+                            "uri": "http://edamontology.org/format_1476"
                         }
                     ]
                 }
             ]
         }
     ],
-    "homepage": "https://mmb.irbbarcelona.org/biobb/workflows/tutorials/amber_md_setup",
+    "homepage": "https://mmb.irbbarcelona.org/biobb/workflows/tutorials/cmip",
     "language": [
         "Python"
     ],
-    "lastUpdate": "2023-08-31T07:40:34.818218Z",
+    "lastUpdate": "2023-08-31T07:32:33.263623Z",
     "license": "Apache-2.0",
     "link": [
         {
@@ -155,25 +177,25 @@
             "type": [
                 "Repository"
             ],
-            "url": "https://github.com/bioexcel/biobb_wf_amber_md_setup"
+            "url": "https://github.com/bioexcel/biobb_wf_cmip"
         },
         {
             "note": "Tutorial in HTML",
             "type": [
                 "Other"
             ],
-            "url": "https://mmb.irbbarcelona.org/biobb/workflows/tutorials/amber_md_setup"
+            "url": "https://mmb.irbbarcelona.org/biobb/workflows/tutorials/cmip"
         },
         {
-            "note": "Tutorial in Read the Docs",
+            "note": "Tutorial in Read The Docs",
             "type": [
                 "Other"
             ],
-            "url": "https://biobb-wf-amber-md-setup.readthedocs.io/en/latest/mdsetup_tutorial.html"
+            "url": "https://biobb-wf-cmip.readthedocs.io/en/latest/index.html"
         }
     ],
     "maturity": "Emerging",
-    "name": "BioExcel Building Blocks tutorials: Protein MD Setup (Amber Version)",
+    "name": "BioExcel Building Blocks tutorials: Molecular Interaction Potentials",
     "operatingSystem": [
         "Linux",
         "Mac",
@@ -228,6 +250,7 @@
                 "journal": "Scientific Data",
                 "title": "BioExcel Building Blocks, a software library for interoperable biomolecular simulation workflows"
             },
+            "note": "BioExcel Building Blocks (BioBB)",
             "pmcid": "PMC6736963",
             "pmid": "31506435",
             "type": [
@@ -237,11 +260,15 @@
     ],
     "relation": [
         {
-            "biotoolsID": "ambertools",
+            "biotoolsID": "biobb",
             "type": "uses"
         },
         {
-            "biotoolsID": "biobb",
+            "biotoolsID": "classical_molecular_interaction_potentials_cmip",
+            "type": "uses"
+        },
+        {
+            "biotoolsID": "nglview",
             "type": "uses"
         }
     ],
@@ -250,20 +277,16 @@
     ],
     "topic": [
         {
+            "term": "Biomolecular simulation",
+            "uri": "http://edamontology.org/topic_3892"
+        },
+        {
             "term": "Data visualisation",
             "uri": "http://edamontology.org/topic_0092"
         },
         {
-            "term": "Molecular dynamics",
-            "uri": "http://edamontology.org/topic_0176"
-        },
-        {
-            "term": "Protein structure analysis",
-            "uri": "http://edamontology.org/topic_2814"
-        },
-        {
-            "term": "Structure analysis",
-            "uri": "http://edamontology.org/topic_0081"
+            "term": "Protein interactions",
+            "uri": "http://edamontology.org/topic_0128"
         }
     ],
     "version": [
