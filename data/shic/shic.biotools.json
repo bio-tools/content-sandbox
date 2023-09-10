@@ -97,6 +97,42 @@
                     },
                     "format": [
                         {
+                            "term": "mzIdentML",
+                            "uri": "http://edamontology.org/format_3247"
+                        }
+                    ]
+                }
+            ],
+            "operation": [
+                {
+                    "term": "Conversion",
+                    "uri": "http://edamontology.org/operation_3434"
+                }
+            ],
+            "output": [
+                {
+                    "data": {
+                        "term": "Protein sequence",
+                        "uri": "http://edamontology.org/data_2976"
+                    },
+                    "format": [
+                        {
+                            "term": "TSV",
+                            "uri": "http://edamontology.org/format_3475"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "input": [
+                {
+                    "data": {
+                        "term": "Peptide identification",
+                        "uri": "http://edamontology.org/data_0945"
+                    },
+                    "format": [
+                        {
                             "term": "pepXML",
                             "uri": "http://edamontology.org/format_3655"
                         }
@@ -231,10 +267,46 @@
                     ]
                 }
             ]
+        },
+        {
+            "input": [
+                {
+                    "data": {
+                        "term": "Text mining report",
+                        "uri": "http://edamontology.org/data_0972"
+                    },
+                    "format": [
+                        {
+                            "term": "XML",
+                            "uri": "http://edamontology.org/format_2332"
+                        }
+                    ]
+                }
+            ],
+            "operation": [
+                {
+                    "term": "Conversion",
+                    "uri": "http://edamontology.org/operation_3434"
+                }
+            ],
+            "output": [
+                {
+                    "data": {
+                        "term": "ChEBI ID",
+                        "uri": "http://edamontology.org/data_1174"
+                    },
+                    "format": [
+                        {
+                            "term": "TSV",
+                            "uri": "http://edamontology.org/format_3475"
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "homepage": "https://github.com/magnuspalmblad/shic",
-    "lastUpdate": "2023-08-31T15:52:52.675315Z",
+    "lastUpdate": "2023-09-04T16:01:20.376269Z",
     "license": "MIT",
     "link": [
         {
