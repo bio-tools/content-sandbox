@@ -12,6 +12,7 @@
             "email": "christelle.dantec@crbm.cnrs.fr",
             "name": "Christelle Dantec",
             "orcidid": "https://orcid.org/0000-0001-7247-6460",
+            "rorid": "01xpc6869",
             "typeEntity": "Person",
             "typeRole": [
                 "Primary contact"
@@ -22,6 +23,7 @@
             "email": "patrick.lemaire@crbm.cnrs.fr",
             "name": "Patrick Lemaire",
             "orcidid": "https://orcid.org/0000-0003-4925-2009",
+            "rorid": "01xpc6869",
             "typeEntity": "Person",
             "typeRole": [
                 "Primary contact"
@@ -29,7 +31,7 @@
             "url": "http://www.crbm.cnrs.fr/en/team/lemaire/"
         },
         {
-            "email": "contact@aniseed.cnrs.fr",
+            "email": "contact@aniseed.fr",
             "typeRole": [
                 "Support"
             ]
@@ -41,25 +43,25 @@
             "type": [
                 "API documentation"
             ],
-            "url": "https://www.aniseed.cnrs.fr/api"
+            "url": "https://www.aniseed.fr/api"
         },
         {
             "type": [
                 "Contributions policy"
             ],
-            "url": "https://www.aniseed.cnrs.fr/aniseed/default/privacyPolicy"
+            "url": "https://www.aniseed.fr/aniseed/default/privacyPolicy"
         },
         {
             "type": [
                 "Terms of use"
             ],
-            "url": "https://www.aniseed.cnrs.fr/aniseed/default/termOfUse"
+            "url": "https://www.aniseed.fr/aniseed/default/termOfUse"
         }
     ],
     "download": [
         {
             "type": "Biological data",
-            "url": "https://www.aniseed.cnrs.fr/aniseed/download/download_data",
+            "url": "https://www.aniseed.fr/aniseed/download/download_data",
             "version": "2019"
         }
     ],
@@ -161,7 +163,7 @@
         "PHP",
         "Python"
     ],
-    "lastUpdate": "2023-09-17T17:31:01.864728Z",
+    "lastUpdate": "2023-09-25T14:25:18.910230Z",
     "license": "GPL-3.0",
     "link": [
         {
@@ -182,7 +184,13 @@
             "type": [
                 "Service"
             ],
-            "url": "https://www.aniseed.cnrs.fr"
+            "url": "https://morphonet.org/"
+        },
+        {
+            "type": [
+                "Service"
+            ],
+            "url": "https://www.aniseed.fr"
         }
     ],
     "maturity": "Mature",
@@ -468,7 +476,7 @@
                         "name": "Yokomori R."
                     }
                 ],
-                "citationCount": 61,
+                "citationCount": 62,
                 "date": "2018-01-01T00:00:00Z",
                 "journal": "Nucleic Acids Research",
                 "title": "ANISEED 2017: Extending the integrated ascidian database to the exploration and evolutionary comparison of genome-scale datasets"
@@ -583,9 +591,94 @@
         },
         {
             "doi": "10.1093/nar/gkz955",
-            "type": [
-                "Primary"
-            ],
+            "metadata": {
+                "abstract": "ANISEED (https://www.aniseed.cnrs.fr) is the main model organism database for the worldwide community of scientists working on tunicates, the vertebrate sister-group. Information provided for each species includes functionally-annotated gene and transcript models with orthology relationships within tunicates, and with echinoderms, cephalochordates and vertebrates. Beyond genes the system describes other genetic elements, including repeated elements and cis-regulatory modules. Gene expression profiles for several thousand genes are formalized in both wild-type and experimentally-manipulated conditions, using formal anatomical ontologies. These data can be explored through three complementary types of browsers, each offering a different view-point. A developmental browser summarizes the information in a gene- or territory-centric manner. Advanced genomic browsers integrate the genetic features surrounding genes or gene sets within a species. A Genomicus synteny browser explores the conservation of local gene order across deuterostome. This new release covers an extended taxonomic range of 14 species, including for the first time a non-ascidian species, the appendicularian Oikopleura dioica. Functional annotations, provided for each species, were enhanced through a combination of manual curation of gene models and the development of an improved orthology detection pipeline. Finally, gene expression profiles and anatomical territories can be explored in 4D online through the newly developed Morphonet morphogenetic browser.",
+                "authors": [
+                    {
+                        "name": "Besnardeau L."
+                    },
+                    {
+                        "name": "Dantec C."
+                    },
+                    {
+                        "name": "Dardaillon J."
+                    },
+                    {
+                        "name": "Dauga D."
+                    },
+                    {
+                        "name": "Davidson B."
+                    },
+                    {
+                        "name": "Debiasse M.B."
+                    },
+                    {
+                        "name": "Douzery E."
+                    },
+                    {
+                        "name": "Dumollard R."
+                    },
+                    {
+                        "name": "Fagotto M."
+                    },
+                    {
+                        "name": "Faure E."
+                    },
+                    {
+                        "name": "Fujiwara S."
+                    },
+                    {
+                        "name": "Gueroult-Bellone M."
+                    },
+                    {
+                        "name": "Lemaire P."
+                    },
+                    {
+                        "name": "Louis A."
+                    },
+                    {
+                        "name": "Naville M."
+                    },
+                    {
+                        "name": "Nishida H."
+                    },
+                    {
+                        "name": "Nitta K.R."
+                    },
+                    {
+                        "name": "Onuma T.A."
+                    },
+                    {
+                        "name": "Reeves W."
+                    },
+                    {
+                        "name": "Roest Crollius H."
+                    },
+                    {
+                        "name": "Ryan J.F."
+                    },
+                    {
+                        "name": "Simion P."
+                    },
+                    {
+                        "name": "Veeman M."
+                    },
+                    {
+                        "name": "Volff J.-N."
+                    },
+                    {
+                        "name": "Wang K."
+                    }
+                ],
+                "citationCount": 31,
+                "date": "2020-01-01T00:00:00Z",
+                "journal": "Nucleic Acids Research",
+                "title": "ANISEED 2019: 4D exploration of genetic data for an extended range of tunicates"
+            },
+            "version": "2019"
+        },
+        {
+            "doi": "10.1093/nar/gkz955",
             "version": "2019"
         }
     ],
@@ -612,6 +705,14 @@
         },
         {
             "biotoolsID": "interpro",
+            "type": "uses"
+        },
+        {
+            "biotoolsID": "morphonet",
+            "type": "usedBy"
+        },
+        {
+            "biotoolsID": "morphonet",
             "type": "uses"
         }
     ],

@@ -12,7 +12,36 @@
             "email": "jstephenson@ebi.ac.uk",
             "name": "James Stephenson",
             "orcidid": "https://orcid.org/0000-0002-6427-5703",
-            "typeEntity": "Person"
+            "typeEntity": "Person",
+            "typeRole": [
+                "Documentor",
+                "Maintainer",
+                "Primary contact"
+            ],
+            "url": "https://www.ebi.ac.uk/people/person/james-stephenson/"
+        },
+        {
+            "name": "Prabhat Totoo",
+            "orcidid": "https://orcid.org/0000-0001-5923-4467",
+            "typeEntity": "Person",
+            "typeRole": [
+                "Developer",
+                "Maintainer"
+            ],
+            "url": "https://www.ebi.ac.uk/people/person/prabhat-totoo/"
+        },
+        {
+            "name": "EMBL-EBI",
+            "typeEntity": "Institute",
+            "typeRole": [
+                "Provider"
+            ],
+            "url": "https://www.ebi.ac.uk/"
+        },
+        {
+            "name": "Open Targets",
+            "typeEntity": "Consortium",
+            "url": "https://www.opentargets.org/"
         }
     ],
     "description": "ProtVar helps users to contextualise and evaluate human missense variation at a per-residue level. It can be accessed via genomic coordinates, IDs or protein positions in over 92% of human proteins. Functional and structural annotations, predictions and co-located variants can be explored via an interactive UI or accessed programatically via an API.",
@@ -108,7 +137,21 @@
     "language": [
         "Java"
     ],
-    "lastUpdate": "2023-09-21T09:15:55.111166Z",
+    "lastUpdate": "2023-09-25T09:31:39.599149Z",
+    "link": [
+        {
+            "type": [
+                "Mailing list"
+            ],
+            "url": "https://docs.google.com/forms/d/e/1FAIpQLSd7P85zRHVspesU3kgF3qWpzSDSYFsyeGFmnkuyzB00HNDmDw/viewform?usp=sf_link"
+        },
+        {
+            "type": [
+                "Social media"
+            ],
+            "url": "https://twitter.com/EBIProtVar"
+        }
+    ],
     "maturity": "Mature",
     "name": "ProtVar",
     "operatingSystem": [
@@ -119,8 +162,40 @@
     "owner": "JStephenson",
     "relation": [
         {
+            "biotoolsID": "alphafold_2",
+            "type": "uses"
+        },
+        {
+            "biotoolsID": "cadd_phred",
+            "type": "uses"
+        },
+        {
+            "biotoolsID": "clinvar",
+            "type": "uses"
+        },
+        {
+            "biotoolsID": "crossmap",
+            "type": "uses"
+        },
+        {
+            "biotoolsID": "dbsnp",
+            "type": "uses"
+        },
+        {
+            "biotoolsID": "ensembl",
+            "type": "uses"
+        },
+        {
+            "biotoolsID": "eve",
+            "type": "uses"
+        },
+        {
             "biotoolsID": "open_targets_platform",
             "type": "usedBy"
+        },
+        {
+            "biotoolsID": "pdbe",
+            "type": "uses"
         },
         {
             "biotoolsID": "uniprot",
